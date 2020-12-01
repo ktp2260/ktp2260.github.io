@@ -1,7 +1,91 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+   <head>
+      <link rel="stylesheet" href="Portfolio.css">
+   </head>
+
+    <body>
+        <!--top menu-->
+        <nav class = "top-nav">
+            <h1>Kailyn Parham</h1>
+            <!--actual menu part that links to the different pages-->
+            <ul>
+                <a href = "Landing Page.html">
+                    <li>Home</li> 
+                </a>
+                <a href = "Bio.html">
+                    <li>About Me</li> 
+                </a>
+                <a href = "Resume.html">
+                    <li>CV</li> 
+                </a>
+                <a href = "Projects.html">
+                    <li>Projects
+                        <!--builds the dropdown menu to link to the different project pages-->
+                        <ul class = "pulldown-menu"> 
+                            
+                            <li>
+                                <a style = "color: #17252A" href = "Project 1.html">
+                                    High-Throughput Assay Optimization
+                                </a>
+                            </li>
+                            
+                            <li>Creating an Automated Imaging System</li>
+                        </ul>
+                    </li>
+                    
+                </a>
+                <a href = "Contact Info.html">
+                    <li>Contact Info</li> 
+                </a>
+            </ul>
+        </nav>  
+
+        <!--main text on page-->
+        <main>
+            <div class = "lp-text"> <!--all centered!-->
+                <h1>Kailyn Parham</h1>
+
+                <img class = "gen-img" src="Images/Kailyn profile.jpg" alt="Photo of Kailyn Parham from the torso up wearing a blue shirt and standing in front of Lake Michigan" title="Photo of Kailyn Parham from the torso up wearing a blue shirt and standing in front of Lake Michigan" width = 200px height = 250px/>
+                <p></p>
+
+                <!--button linking to the about me page-->
+                <a href="Bio.html">
+                    <button class="am-button" title="About Me"> About Me </button>
+                </a>
+            
+                <!--showing two projects on the landing page-->
+                <h2>Projects</h2>
+            </div>
+
+            <div class = "project-cont">
+                <div class = "proj-left">
+                    <div class = "left-img"> 
+                        <!--first project linking to a description of the project-->
+                        <a href = "Project 1.html">
+                            <img class = "gen-img" src = "Images/Nematode staging graph.png" alt="Graph showing the staging of N2 nematodes based on length when grown on E. coli food from preparation 1 and 2 at four timepoints and 3 optical densities" title="Graph showing the staging of N2 nematodes based on length when grown on E. coli food from preparation 1 and 2 at four timepoints and 3 optical densities" width = 300px height = 200px>
+                        </a>
+                    </div>
+                    <div class = "project-txt">
+                        <h3>High-Throughput Assay Optimization</h3>
+                        <p>Improving high-throughput assays by determining an optimal bacterial food source for <i>C. elegans</i> </p>
+                    </div>
+                </div>
+
+                <!--second project-->
+                <div class = "proj-right">
+                    <div class = "right-img"> 
+                            <img class = "gen-img" src = "Images/Pipeline well example.png" alt="Well of a plate with C. elegans nematodes inside. Each nematode is marked with a colored shape." title="Well of a plate with C. elegans nematodes inside. Each nematode is marked with a colored shape." width = 200px height = 200px>
+                    </div>
+                    <div class = "project-txt">
+                        <h3>Creating an Automated Imaging System</h3>
+                        <p>Building an automated imaging system to quantify how <i>C. elegans</i> responds to toxins </p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+
+   </body>
 </html>
